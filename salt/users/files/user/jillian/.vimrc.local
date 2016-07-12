@@ -32,7 +32,7 @@ nnoremap <F5> :GundoToggle<CR>
 map <Leader>sp :set paste<CR>
 map <Leader>snp :set nopaste<CR>
 
-"colorscheme ir_black
+colorscheme molokai
 
 let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\|\h\w*->\h\w*\|\h\w*::\|\h\w*::\h\w*'
 

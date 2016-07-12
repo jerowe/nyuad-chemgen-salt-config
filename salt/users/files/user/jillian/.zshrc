@@ -117,3 +117,5 @@ export EASYBUILD_PREFIX=$HOME/.local/easybuild
 module use $EASYBUILD_PREFIX/modules/all
 module load EasyBuild
 export EASYBUILD_INCLUDE_EASYBLOCKS=/home/jillian/Dropbox/projects/python/jerowe-easybuild-easyblocks-stage/easybuild/easyblocks/\*.py
+
+export TERM=screen-256color
