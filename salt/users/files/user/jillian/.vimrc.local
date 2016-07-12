@@ -1,0 +1,77 @@
+let mapleader="\\"
+"Screen
+let g:ScreenImpl = 'Tmux'
+let g:ScreenShellHeight = '0'
+let g:ScreenShellQuitOnVimExit=1
+"" Open a shell/repl
+noremap <leader>S :ScreenShell 
+noremap <leader>sq :ScreenQuit 
+"" send current visual selection to a shell/repl
+vnoremap <leader>s :ScreenSend<CR> "
+
+"Javascript comments
+""Within an html file nerdcommenter doesn't catch javascript
+vmap <Leader>jc :s!^!//!<CR>
+vmap <Leader>ju :s!^//!!<CR>"
+
+
+"CtrlP
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+""" open in git repository
+let g:ctrlp_working_path_mode = 'ra'
+" change file finding
+map <Leader>cw :CtrlPCurWD<CR>
+map <Leader>mru :CtrlPMRU<CR>
+
+
+"Gundo
+nnoremap <F5> :GundoToggle<CR>
+
+"SEt paste
+map <Leader>sp :set paste<CR>
+map <Leader>snp :set nopaste<CR>
+
+"colorscheme ir_black
+
+let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\|\h\w*->\h\w*\|\h\w*::\|\h\w*::\h\w*'
+
+"Syntastic
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 1
+let g:syntastic_aggregate_errors=1
+let g:syntastic_id_checkers=1
+let g:syntastic_auto_jump=1
+let g:syntastic_auto_loc_list=1
+let g:syntastic_loc_list_height=5
+let g:syntastic_enable_highlighting=1
+
+let g:syntastic_enable_perl_checker = 1
+let g:syntastic_perl_checkers = ['perl', 'podchecker']
+
+"Tagbar
+nmap <F8> :TagbarToggle<CR>
+
+let g:tagbar_autoclose = 1
+" Tagbar settings to recognise Perl Moo..Moose
+let g:tagbar_type_perl = {
+    \ 'ctagstype'   : 'Perl',
+    \ 'kinds' : [
+        \ 'p:packages:1:0',
+        \ 'u:uses:1:0',
+        \ 'r:requires:1:0',
+        \ 'e:extends',
+        \ 'w:roles',
+        \ 'o:ours:1:0',
+        \ 'c:constants:1:0',
+        \ 'f:formats:1:0',
+        \ 'a:attributes',
+        \ 's:subroutines',
+        \ 'x:around:1:0',
+        \ 'l:aliases',
+        \ 'd:pod:1:0',
+    \ ],
+\ }
