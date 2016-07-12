@@ -1,0 +1,9 @@
+[submodule "formulas/docker"]
+	path = formulas/docker
+	url = https://github.com/saltstack-formulas/docker-formula
+[submodule "formulas/apache"]
+	path = formulas/apache
+	url = https://github.com/saltstack-formulas/docker-formula
+[submodule "formulas/users"]
+	path = formulas/users
+	url = https://github.com/saltstack-formulas/users-formula
