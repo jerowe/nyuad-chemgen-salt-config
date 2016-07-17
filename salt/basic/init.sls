@@ -11,8 +11,6 @@ basic:
             - tmux
             - environment-modules
             - zsh
-            - liblua5.3-dev
-            - libluajit-5.1-dev 
             - ruby-dev 
             - vim-nox
             - libzzip-dev

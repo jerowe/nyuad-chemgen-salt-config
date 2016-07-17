@@ -4,4 +4,6 @@ base:
        - users 
        - basic.install 
        - apache 
-       - docker 
+       - postgres 
+       - php 
+       - node 

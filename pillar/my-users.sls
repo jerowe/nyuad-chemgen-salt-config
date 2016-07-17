@@ -1,7 +1,7 @@
 users:
-  jillian:
-    fullname: Jillian
-    home: /home/jillian
+  jdr400:
+    fullname: Jillian Rowe
+    home: /home/jdr400
     createhome: True
     manage_vimrc: False
     manage_bashrc: False

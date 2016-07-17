@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/home/jillian/.oh-my-zsh
+export ZSH=/home/jdr400/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -81,7 +81,7 @@ source $ZSH/oh-my-zsh.sh
 # User Things
 
 # I break my path alot
-export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/home/jillian/.local/bin:/home/jillian/bin
+export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/home/jdr400/.local/bin:/home/jdr400/bin
 
 alias l='ls -lah'
 
@@ -96,12 +96,10 @@ antigen theme robbyrussell
 
 antigen apply
 
-alias pyb="python setup.py build && python setup.py install -v"
-
 #Tmuxifier
 export PATH=$HOME/.tmuxifier/bin:$PATH
 eval "$(tmuxifier init -)"
-export TMUXIFIER_LAYOUT_PATH=$HOME/Dropbox/tmuxifier-layouts
+#export TMUXIFIER_LAYOUT_PATH=$HOME/Dropbox/tmuxifier-layouts
 
 case "$0" in
           -sh|sh|*/sh)  modules_shell=sh ;;
@@ -113,9 +111,9 @@ esac
 module() { eval `/usr/bin/modulecmd $modules_shell $*`; }
 
 
-export EASYBUILD_PREFIX=$HOME/.local/easybuild
-module use $EASYBUILD_PREFIX/modules/all
-module load EasyBuild
-export EASYBUILD_INCLUDE_EASYBLOCKS=/home/jillian/Dropbox/projects/python/jerowe-easybuild-easyblocks-stage/easybuild/easyblocks/\*.py
+#export EASYBUILD_PREFIX=$HOME/.local/easybuild
+#module use $EASYBUILD_PREFIX/modules/all
+#module load EasyBuild
+#export EASYBUILD_INCLUDE_EASYBLOCKS=/home/jdr400/Dropbox/projects/python/jerowe-easybuild-easyblocks-stage/easybuild/easyblocks/\*.py
 
 export TERM=xterm-256color
