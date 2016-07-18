@@ -1,8 +1,8 @@
 base:
     '*':
        - basic 
-       - users 
        - basic.install 
+       - users 
        - apache 
        - postgres 
        - php 

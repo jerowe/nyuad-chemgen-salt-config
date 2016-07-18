@@ -15,6 +15,7 @@ basic:
             - vim-nox
             - libzzip-dev
             - patch 
+            - phppgadmin
 dev:
     pkg:
         - installed
